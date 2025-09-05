@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio • আপনার নাম</title>
+  <meta name="description" content="Personal portfolio of [আপনার নাম] — web developer & bug bounty enthusiast." />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">N</div>
+        <div>
+          <div style="font-weight:700">[আপনার নাম]</div>
+          <div class="muted" style="font-size:13px">Web Developer • Bug Bounty Hunter</div>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="mobile-nav">
+        <button id="menuBtn" aria-label="menu">☰</button>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-left card">
+        <h1>Salam! Ami <span class="accent">[আপনার নাম]</span></h1>
+        <p class="lead">I build secure and reliable web apps. Currently focused on web security, bug bounty hunting, and full-stack development.</p>
+
+        <div id="about">
+          <h3>About</h3>
+          <p class="muted">Short intro: You can write 2–3 lines about yourself here — your experience, goals, and the kind of projects you like to work on.</p>
+        </div>
+
+        <div id="skills">
+          <h3>Skills</h3>
+          <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Recon &amp; Nmap</div>
+            <div class="skill">XSS / Web Sec</div>
+            <div class="skill">Python (basics)</div>
+          </div>
+        </div>
+
+        <div class="tags">
+          <a class="tag" href="#projects">Projects</a>
+          <a class="tag" href="#contact">Hire me</a>
+        </div>
+      </div>
+
+      <aside class="hero-right card profile-card">
+        <div class="profile-pic">N</div>
+        <div class="profile-info">
+          <div style="font-weight:700">[আপনার নাম]</div>
+          <div class="muted" style="font-size:13px">Dhaka, Bangladesh</div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <article class="project card fade-in">
+          <h3>Project One</h3>
+          <p class="muted">Short description — what you built, the tech stack, and your role. Add a link to the repo or demo.</p>
+        </article>
+
+        <article class="project card fade-in">
+          <h3>Project Two</h3>
+          <p class="muted">Short description — e.g., a web app where you tested security and fixed XSS/IDOR issues.</p>
+        </article>
+
+        <article class="project card fade-in">
+          <h3>Project Three</h3>
+          <p class="muted">Short description — small scripts, recon tools, or CTF write-ups.</p>
+        </article>
+
+        <article class="project card fade-in">
+          <h3>Project Four</h3>
+          <p class="muted">Short description — links to live demos or GitHub readmes.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="card">
+        <h3>Get in touch</h3>
+        <p class="muted">I typically reply within a few days. Share project details or collaboration ideas.</p>
+
+        <form id="contactForm">
+          <input type="text" id="name" placeholder="Your name" required />
+          <input type="email" id="email" placeholder="Email" required />
+          <textarea id="message" rows="5" placeholder="Message" required></textarea>
+          <button type="submit">Send message</button>
+        </form>
+      </div>
+
+      <aside class="card">
+        <h4>Contact info</h4>
+        <p class="muted">Email: <a href="mailto:you@example.com">you@example.com</a></p>
+        <p class="muted">LinkedIn: <a href="#">linkedin.com/in/yourname</a></p>
+        <p class="muted">GitHub: <a href="#">github.com/yourname</a></p>
+
+        <div class="availability">
+          <div class="muted" style="font-size:13px">Availability</div>
+          <div style="font-weight:700">Open for freelance & part-time</div>
+        </div>
+      </aside>
+    </section>
+
+    <footer>
+      <div class="muted">© <span id="year"></span> [আপনার নাম]. Built with ❤️ • Responsive HTML + CSS + JS.</div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
