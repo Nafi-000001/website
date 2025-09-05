@@ -20,20 +20,27 @@ background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
 
 /* Navbar */
 header {
-  background: #222;
-  color: #fff;
-  padding: 1rem 2rem;
-  position: fixed;
-  width: 100%;
+  position: fixed;      
   top: 0;
   left: 0;
-  z-index: 1000;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85); 
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  z-index: 1000;        
 }
-
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;      
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85); 
+  padding: 1rem 2rem;
+  z-index: 1000;         
 }
 
 nav ul {
